@@ -1,10 +1,14 @@
-<h1>Albums</h1>
+<div class="header">
+    <h1>Albums</h1>
+</div>
 <% if @albums.length > 0 %>
-    <% @albums.each do |album| %>
-        <div class='album'>
-            <p>Name: <a href="/albums/<%= album.id %>"><b><%= album.name %></b></a></p>
-        </div>
-    <% end %>
+    <div class="albums">
+        <% @albums.each do |album| %>
+            <div class='album'>
+                <a href="/albums/<%= album.id %>"><%= album.name %></a>
+            </div>
+        <% end %>
+    </div>
 <% else %>
-    <div>There are currently no albums, consider creating one.</div>
+    <div class="no-albums">There are currently no albums, consider creating one.</div>
 <% end %>

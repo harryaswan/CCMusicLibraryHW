@@ -1,7 +1,9 @@
-<h1>Create a new Album</h1>
+<div class="header">
+    <h1>Create a new Album</h1>
+</div>
 <form action="/albums" method="post">
     <label for="name">Name:</label>
-    <input type="text" name="name" placeholder="e.g. Rod Stewart">
+    <input type="text" name="name" class="text" placeholder="e.g. Rod Stewart">
     <label for="artist_id">Artist:</label>
     <select name="artist_id">
         <option>Please Select</option>
@@ -9,5 +11,5 @@
             <option value="<%= artist.id %>"><%= artist.name %></option>
         <% end %>
     </select>
-    <input type="submit" name="create_album" value="Save">
+    <input type="submit" class="button" name="create_album" value="Save">
 </form>

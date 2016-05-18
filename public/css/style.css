@@ -1,5 +1,172 @@
+/*
+
+    font-family: 'Candal', sans-serif;
+
+    font-family: 'Nunito', sans-serif;
+
+    font-family: 'Lobster', cursive;
+
+*/
+
 body {
 
-    background: #EEE;
+    background: #598fc6;
+    margin: 0px;
+    padding: 5px;
 
+}
+h1 {
+    font-family: 'Candal', sans-serif;
+    color: #87c052;
+    /*width: 100%;*/
+    display: inline-block;
+    text-shadow: -2px -2px #517331;
+}
+.header {
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+}
+
+
+/*NAVS*/
+
+.all-navs {
+    width: 100%;
+    margin: 0px;
+    padding: 1px;
+    /*position: fixed;
+    top: 0px;
+    left: 0px;*/
+    overflow: hidden;
+    height: 100px;
+    background: #679cd1;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3em;
+    /* TODO: CHECK FONT SIZE WORKING - ADJUST ACCORDINGLY */
+}
+
+/*ul li {
+    display: inline;
+    list-style-type: none;
+}*/
+
+.library-nav {
+    float: left;
+    padding-top: 10px;
+}
+
+.library-nav ul li {
+    list-style-type: none;
+}
+.library-nav ul li a {
+    color: #1a2a3b;
+    display: block;
+    width: 120px;
+    text-decoration: none;
+}
+.library-nav ul li a:clicked {
+    color: #1a2a3b;
+}
+
+.library-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.multi-nav {
+    float: left;
+    padding-top: 10px;
+}
+.multi-nav ul li {
+    display: none;
+    list-style-type: none;
+    width: 120px;
+    color: #1a2a3b;
+}
+.multi-nav ul li:first-child {
+    display: inline-block;;
+    padding-left: 1px;
+}
+.multi-nav ul:hover > li{
+    display: inline;
+    list-style-type: none;
+}
+.multi-nav ul li a {
+    display: block;
+    margin-left: 5px;
+    width: 120px;
+    color: #1a2a3b;
+    text-decoration: none;
+}
+.multi-nav ul li a:clicked {
+    color: #1a2a3b;
+}
+.multi-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.albums, .artists {
+    width: 100%;
+    text-align: center;
+}
+
+.album, .artist {
+    font-family: 'Lobster', cursive;
+    font-size: 1.5em;
+}
+
+.album a, .artist a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.album a:hover, .artist a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+
+form {
+    text-align: center;
+}
+label {
+    font-family: 'Lobster', cursive;
+    font-size: 1.5em;
+}
+input.text, select {
+    font-size: 1.5em;
+    line-height: 1.6em;
+    background: #1a2a3b;
+    border-radius: 5px;
+    color: #f7fcf8;
+    border: 0px;
+    font-family: 'Lobster', cursive;
+    padding-left: 10px;
+    overflow: visible;
+}
+input.button {
+    background: #9fcc74;
+    font-size: 1.5em;
+    font-family: 'Candal', sans-serif;
+    border-radius: 2px;
+    border: 0px;
+}
+
+.artist-row {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 1.5em;
+}
+.artist-info {
+    display: inline-block;
+    position: relative;
+    font-family: 'Candal', sans-serif;
+    top: 0px;
+}
+.artist-albums {
+    display: inline-block;
+    font-family: 'Lobster', cursive;
 }
