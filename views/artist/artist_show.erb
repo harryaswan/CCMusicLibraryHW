@@ -1,4 +1,8 @@
-<h1>Artist #<%= @artist.id %></h1>
-<p>Name: <b><%= @artist.name %></b></p>
-<br>
-<a href="/artists/<%= @artist.id %>/edit">Edit Artist</a>
+<div class="header">
+    <h1>Artist #<%= @artist.id %></h1>
+</div>
+<div class="show-body">
+    <p class="show-text">Name: <span class="show-name"><%= @artist.name %></span></p>
+    <br>
+    <a href="/artists/<%= @artist.id %>/edit" class="show-link">Edit Artist</a>
+</div>

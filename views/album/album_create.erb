@@ -1,3 +1,7 @@
-<h1><%= @album.name %> has been added!</h1>
+<div class="header">
+    <h1><%= @album.name %> has been added!</h1>
+</div>
 <br>
-<a href="/albums/<%= @album.id %>">View here</a>
+<div class="show-body">
+    <a href="/albums/<%= @album.id %>" class="show-link">View here</a>
+</div>

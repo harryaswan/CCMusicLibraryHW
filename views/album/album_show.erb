@@ -1,4 +1,8 @@
-<h1>Album #<%= @album.id %></h1>
-<p>Name: <b><%= @album.name %></b></p>
-<br>
-<a href="/albums/<%= @album.id %>/edit">Edit Album</a>
+<div class="header">
+    <h1>Album #<%= @album.id %></h1>
+</div>
+<div class="show-body">
+    <p class="show-text">Name: <span class="show-name"><%= @album.name %></span></p>
+    <br>
+    <a href="/albums/<%= @album.id %>/edit" class="show-link">Edit Album</a>
+</div>

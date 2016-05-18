@@ -39,7 +39,7 @@ h1 {
     top: 0px;
     left: 0px;*/
     overflow: hidden;
-    height: 100px;
+    height: 110px;
     background: #679cd1;
     font-family: 'Nunito', sans-serif;
     font-size: 1.3em;
@@ -53,7 +53,7 @@ h1 {
 
 .library-nav {
     float: left;
-    padding-top: 10px;
+    padding-top: 0px;
 }
 
 .library-nav ul li {
@@ -75,7 +75,7 @@ h1 {
 
 .multi-nav {
     float: left;
-    padding-top: 10px;
+    padding-top: 0px;
 }
 .multi-nav ul li {
     display: none;
@@ -94,6 +94,7 @@ h1 {
 .multi-nav ul li a {
     display: block;
     margin-left: 5px;
+    margin-right: -4px;
     width: 120px;
     color: #1a2a3b;
     text-decoration: none;
@@ -146,12 +147,23 @@ input.text, select {
     padding-left: 10px;
     overflow: visible;
 }
+
 input.button {
     background: #9fcc74;
     font-size: 1.5em;
     font-family: 'Candal', sans-serif;
     border-radius: 2px;
     border: 0px;
+}
+
+input.button:hover, input.text:hover, select:hover {
+    box-shadow: -2px 2px 5px #333333;
+}
+
+input.delete {
+    background: #ff4c4c;
+    font-size: 0.9em;
+    margin-top: 15px;
 }
 
 .artist-row {
@@ -169,4 +181,29 @@ input.button {
 .artist-albums {
     display: inline-block;
     font-family: 'Lobster', cursive;
+    color: #333333;
+}
+
+.show-body {
+    text-align: center;
+    font-size: 1.5em;
+}
+.show-text {
+    font-family: 'Lobster', cursive;
+    color: #333333;
+}
+
+.show-name {
+    color: #000000;
+    font-family: 'Candal', sans-serif;
+    text-decoration: none;
+}
+
+.show-link {
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    color: #1a2a3b;
+}
+.show-link:hover {
+    text-decoration: underline;
 }
