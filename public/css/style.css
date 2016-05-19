@@ -20,11 +20,14 @@ h1, .site-title {
     color: #87c052;
     display: block;
     text-shadow: -2px -2px #517331;
+    z-index: 0;
 }
 .header {
     width: 100%;
     margin: 0px;
     text-align: center;
+    position: relative;
+    z-index: 0;
     /*position: absolute;*/
 }
 
@@ -39,6 +42,7 @@ h1, .site-title {
     background: #679cd1;
     font-family: 'Nunito', sans-serif;
     font-size: 1.3em;
+    position: relative;
 }
 .library-nav {
     float: left;
@@ -65,11 +69,27 @@ h1, .site-title {
 .multi-nav {
     float: left;
     padding-top: 0px;
-    z-index: 100;
+    /*z-index: 100;*/
+    /*position: relative;*/
+    /*position: absolute;
+    display: none;
+    width: 400px;
+    text-align: left;*/
+}
+.one {
 
+}
+.two {
+    margin-left: 160px;
 }
 .multi-nav ul {
     /*position: absolute;*/
+    /*position: relative;*/
+    z-index: 500;
+    position: absolute;
+    /*display: none;*/
+    /*width: 400px;*/
+    /*text-align: left;*/
 }
 .multi-nav ul li {
     display: none;
@@ -108,16 +128,24 @@ h1, .site-title {
 
 .site-title {
     float: right;
+    padding-right: 20px;
 }
 
 .albums, .artists {
-    width: 100%;
-    text-align: center;
+    width: 50%;
+    margin: auto;
+
 }
 
 .album, .artist {
     font-family: 'Lobster', cursive;
     font-size: 1.5em;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+    background: #679cd1;
+    border-radius: 2px;
 }
 
 .album a, .artist a {
@@ -173,9 +201,15 @@ input.delete {
 .artist-row {
     width: 50%;
     margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
     font-size: 1.5em;
     padding: 10px;
+    background: #679cd1;
+    border-radius: 2px;
+    /*height: 50px;*/
+    overflow: hidden;
 }
 .artist-info {
     display: inline-block;
@@ -184,16 +218,28 @@ input.delete {
     top: 0px;
     vertical-align: top;
     padding-right: 10px;
+    /*width:50%;*/
+    text-align: left;
     float: left;
     /*clear: both;*/
+    padding-bottom: 100px;
+    margin-bottom: -100px;
+}
+.artist-info a {
+    font-family: 'Candal', sans-serif;
+    color: inherit;
 }
 .artist-albums {
     display: inline-block;
     font-family: 'Lobster', cursive;
     color: #333333;
     padding-left: 10px;
+    /*width:50%;*/
+    text-align: right;
     float: right;
     /*clear: both;*/
+    padding-bottom: 100px;
+    margin-bottom: -100px;
 }
 
 .show-body {

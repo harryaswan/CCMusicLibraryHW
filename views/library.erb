@@ -5,10 +5,18 @@
 <% @artists.each do |artist| %>
 
     <div class='artist-row'>
-        <div class="artist-info"> <%= artist.name %> </div>
+        <div class="artist-info">
+            <!-- <a href="/artists/<%= artist.id %>"> -->
+                <%= artist.name %>
+            <!-- </a> -->
+        </div>
         <div class="artist-albums">
             <% artist.albums.each do |album| %>
-                <div class="album-row"> <%= album.name %> </div>
+                <div class="album-row">
+                    <!-- <a href="/albums/<%= album.id %>"> -->
+                        <%= album.name %>
+                    <!-- </a> -->
+                </div>
             <% end %>
         </div>
     </div>

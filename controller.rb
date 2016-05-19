@@ -9,8 +9,10 @@ require_relative('models/album')
 require_relative('controllers/album_controller')
 require_relative('controllers/artist_controller')
 
+set :port, 80
+
 get '/' do
-    erb(:home)
+    redirect '/library'
 end
 
 get '/library' do
