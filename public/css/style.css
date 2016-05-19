@@ -15,17 +15,17 @@ body {
     padding: 5px;
 
 }
-h1 {
+h1, .site-title {
     font-family: 'Candal', sans-serif;
     color: #87c052;
-    /*width: 100%;*/
-    display: inline-block;
+    display: block;
     text-shadow: -2px -2px #517331;
 }
 .header {
     width: 100%;
     margin: 0px;
     text-align: center;
+    /*position: absolute;*/
 }
 
 
@@ -35,22 +35,11 @@ h1 {
     width: 100%;
     margin: 0px;
     padding: 1px;
-    /*position: fixed;
-    top: 0px;
-    left: 0px;*/
-    overflow: hidden;
-    height: 110px;
+    height: 60px;
     background: #679cd1;
     font-family: 'Nunito', sans-serif;
     font-size: 1.3em;
-    /* TODO: CHECK FONT SIZE WORKING - ADJUST ACCORDINGLY */
 }
-
-/*ul li {
-    display: inline;
-    list-style-type: none;
-}*/
-
 .library-nav {
     float: left;
     padding-top: 0px;
@@ -76,20 +65,31 @@ h1 {
 .multi-nav {
     float: left;
     padding-top: 0px;
+    z-index: 100;
+
+}
+.multi-nav ul {
+    /*position: absolute;*/
 }
 .multi-nav ul li {
     display: none;
     list-style-type: none;
     width: 120px;
     color: #1a2a3b;
+    background: #679cd1;
+    padding: 2px;
+    border-radius: 5px;
+
 }
 .multi-nav ul li:first-child {
     display: inline-block;;
     padding-left: 1px;
+    /*z-index: 0;*/
 }
 .multi-nav ul:hover > li{
-    display: inline;
+    display: block;
     list-style-type: none;
+    background: #679cd1;
 }
 .multi-nav ul li a {
     display: block;
@@ -104,6 +104,10 @@ h1 {
 }
 .multi-nav ul li a:hover {
     text-decoration: underline;
+}
+
+.site-title {
+    float: right;
 }
 
 .albums, .artists {
@@ -167,21 +171,29 @@ input.delete {
 }
 
 .artist-row {
-    width: 100%;
+    width: 50%;
     margin: auto;
     text-align: center;
     font-size: 1.5em;
+    padding: 10px;
 }
 .artist-info {
     display: inline-block;
     position: relative;
     font-family: 'Candal', sans-serif;
     top: 0px;
+    vertical-align: top;
+    padding-right: 10px;
+    float: left;
+    /*clear: both;*/
 }
 .artist-albums {
     display: inline-block;
     font-family: 'Lobster', cursive;
     color: #333333;
+    padding-left: 10px;
+    float: right;
+    /*clear: both;*/
 }
 
 .show-body {
